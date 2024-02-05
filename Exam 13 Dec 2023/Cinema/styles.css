@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+    --color--primary: #56dbb1;
+    --color--secondary: #ececec;
+    --color--text--grey: #6d6467;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.header__container__left {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.header__logo {
+    text-transform: uppercase;
+}
+
+.header__logo::after {
+    content: '';
+    width: 1rem;
+    border: 1px solid var(--color--text--grey);
+    opacity: 0.5;
+    margin-left: 1rem;
+}
+
+.header__paragraph {
+    align-self: flex-end;
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-size: 0.8rem;
+}
+
+.header__container__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 3px;
+}
+
+.header__links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__button {
+    font-size: 1rem;
+    color: var(--color--text--grey);
+    padding: 1rem 2rem;
+    background-color: var(--color--secondary);
+}
+
+.header__button--active {
+    color: black;
+    background-color: #56dbb1;
+}
+
+.section__img {
+    height: 40rem;
+}
+
+.section__img img {
+    width: 100%;
+    height: inherit;
+}
+
+.section__hero {
+    padding: 4rem 20rem;
+    background-color: var(--color--primary);
+}
+
+.section__hero__paragraph {
+    text-align: center;
+}
+
+.section__lectus,
+.section__four {
+    background-color: #353434;
+    padding: 7rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.section__lectus__card {
+    max-width: 20%;
+}
+
+.section__lectus__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section__lectus__icon i {
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    background-color: var(--color--primary);
+    padding: 1.2rem;
+}
+
+.heading__tertiary {
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1rem;
+    margin: 0 auto 1rem auto;
+    width: 95%;
+}
+
+.section__lectus__paragraph,
+.section__four__paragraph {
+    color: var(--color--text--grey);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.section__convallis {
+    padding: 5rem 7rem;
+    text-align: center;
+}
+
+.heading__secondary {
+    font-size: 24px;
+    color: var(--color--text--grey);
+}
+
+.section__convallis__paragraph {
+    font-size: 12px;
+    color: var(--color--text--grey);
+    opacity: 0.5;
+    margin-bottom: 2rem;
+}
+
+.section__convallis__button {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    background-color: #974d1b;
+}
+
+.section__four__card {
+    width: 25%;
+}
+
+.section__four {
+    gap: 0;
+}
+
+.section__four h3 {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.section__four__paragraph {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.footer {
+    padding: 3rem;
+    background-color: rgb(27, 151, 114);
+    text-align: center;
+}
+
+.footer__paragraph {
+    font-size: 1rem;
+    color: rgb(67, 213, 177);
+    letter-spacing: 2px;
+}
+
+.footer__paragraph span {
+    color: #fff;
+    opacity: 1;
+}
