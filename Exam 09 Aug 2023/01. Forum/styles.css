@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: url('images/background.jpg') center no-repeat;
+}
+
+.container {
+    height: 100vh;
+    padding: 6rem 14.4rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    /* height: 300px; */
+}
+
+.article-left {
+    padding: 6rem;
+    background-color: #fff;
+    display: flex;
+    gap: 6rem;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.left-card__quote {
+    font-size: 5rem;
+}
+
+.left-card__p {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    color: #595959;
+}
+
+.left-card__h2,
+.right-card__h2 {
+    font-size: 2.3rem;
+}
+
+.left-card__img {
+    margin: auto 0;
+}
+
+.left-card__img img {
+    width: 24rem;
+    height: 24rem;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+
+.article-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 6rem 4rem 2rem 4rem;
+}
+
+.right-card__quote {
+    font-size: 12rem;
+    padding-bottom: 4rem;
+}
+
+.right-card__p {
+    font-size: 2rem;
+    padding-bottom: 14.4rem;
+}
+
+.right-card__img img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1000px;
+    filter: grayscale(100%);
+}
+
+.right-card__info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid rgba(89, 89, 89, 0.2);
+    padding: 2rem 0;
+}
+
+.right-card__footer {
+    color: #595959;
+    font-size: 2rem;
+}
