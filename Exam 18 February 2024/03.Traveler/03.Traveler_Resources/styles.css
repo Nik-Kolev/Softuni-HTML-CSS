@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', 'Cormorant Infant';
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+.testimonials__p-user,
+.guides__button {
+    font-family: 'Cormorant Infant';
+}
+
+.container {
+    max-width: 192rem;
+    background-color: #f8f0e9;
+}
+
+.header__logo {
+    width: 7rem;
+    height: auto;
+}
+
+.header__logo img,
+.footer__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    padding: 4rem 9rem 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.nav__list {
+    display: flex;
+    gap: 5.5rem;
+}
+
+.nav__button {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    background: url('images/poster.jpg') no-repeat center;
+    background-size: 100% 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: brightness(65%);
+    z-index: -1;
+}
+
+.hero-container {
+    padding: 30rem 0 17rem;
+}
+
+.hero__h1,
+.hero__p {
+    text-align: center;
+    color: #fff;
+}
+
+.hero__h1 {
+    font-size: 9rem;
+    margin-bottom: 17rem;
+}
+
+.hero__p {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.testimonials {
+    padding: 6rem 40rem 14rem;
+}
+
+.testimonials__p-top {
+    font-size: 1.8rem;
+    margin-bottom: 10rem;
+    color: #352b2a;
+    opacity: 0.8;
+}
+
+.testimonials__p-user {
+    color: #352b2a;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1;
+    font-style: italic;
+}
+
+.support {
+    background-color: #e14747;
+    padding: 9rem 0;
+    text-align: center;
+}
+
+.support__time,
+.support__p {
+    color: #fff;
+}
+
+.support__time {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 6rem;
+}
+
+.support__p {
+    font-size: 1.8rem;
+}
+
+.articles {
+    padding: 8rem 0;
+    width: 62rem;
+    margin: 0 auto;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article__img {
+    width: 62rem;
+    height: 46rem;
+}
+
+.article__img,
+.article__h2 {
+    margin-bottom: 10rem;
+}
+
+.article__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.article__h2 {
+    font-size: 7.5rem;
+    text-align: center;
+}
+
+.article__p {
+    font-size: 1.8rem;
+}
+
+.article__p,
+.article__read-more {
+    margin-bottom: 8rem;
+}
+
+.article__read-more {
+    align-self: flex-start;
+}
+
+.article__button {
+    color: black;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.guides {
+    background-color: #e14747;
+    padding: 14rem 0 7rem;
+    text-align: center;
+}
+
+.guides__h2 {
+    color: #fff;
+    font-size: 9rem;
+    margin-bottom: 12rem;
+}
+
+.guides__p {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    width: 45%;
+}
+
+.guides__button {
+    font-size: 1.6rem;
+    background-color: #fad87a;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    color: black;
+    width: fit-content;
+}
+
+.footer {
+    background-color: #352b2a;
+    padding: 5rem 0 5rem 15rem;
+}
+
+.footer__logo {
+    margin-bottom: 4rem;
+}
+
+.footer__p {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.footer__copyright {
+    font-weight: 1.8rem;
+    font-weight: 600;
+    color: #565252;
+}
+
+.footer__logo {
+    width: 5rem;
+    height: auto;
+}
